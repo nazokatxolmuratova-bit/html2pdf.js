@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>100 Дней Без Сожалений</title>
+  <style>
+    body {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      padding: 15mm;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+    .header h2 {
+      margin: 5px 0;
+      font-size: 18px;
+      font-weight: normal;
+    }
+    .habit {
+      margin-bottom: 25px;
+    }
+    .habit-name {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      gap: 4px;
+    }
+    .circle {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      font-size: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Сегодня ____ день из 100</h2>
+    <h1>100 дней без сожалений</h1>
+    <h2>Мой путь к лучшей версии себя</h2>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">LIGHTS OFF BEFORE 23:00</div>
+    <div class="grid">
+      <!-- Генерация 1–100 -->
+      <!-- Можно дублировать этот кусок для всех привычек -->
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">СПОРТ</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">ОВОЩИ & ФРУКТЫ</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">ДНЕВНИК</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">ЧТЕНИЕ</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">МЕДИТАЦИЯ</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">COIN KEEPER</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">5г СОЛЬ</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">NO SMOKING</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+
+  <div class="habit">
+    <div class="habit-name">NO SUGAR & COFFEE</div>
+    <div class="grid">
+      ${Array.from({length: 100}, (_, i) => `<div class="circle">${i+1}</div>`).join('')}
+    </div>
+  </div>
+</body>
+</html>
